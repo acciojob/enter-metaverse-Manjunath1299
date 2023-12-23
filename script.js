@@ -1,4 +1,4 @@
- function changeText() {
+ function updateContent(){
             var statusElement = document.getElementById('status');
 
             // Change the tag to <h1>
