@@ -1,11 +1,12 @@
- function updateContent(){
-            var statusElement = document.getElementById('status');
+function updateContent() {
+  // Get the p element with the id "status"
+  const statusP = document.getElementById("status");
 
-            // Change the tag to <h1>
-            var h1Element = document.createElement('h1');
-            h1Element.id = 'status';
-            h1Element.textContent = 'Entered Metaverse';
+  // Create an h1 element with the new text
+  const newContent = document.createElement("h1");
+  newContent.textContent = "Entered Metaverse";
 
-            // Replace the <p> with the new <h1>
-            statusElement.parentNode.replaceChild(h1Element, statusElement);
-        }
+  // Replace the existing content of the p element with the h1 element
+  statusP.innerHTML = ""; // Clear the existing content
+  statusP.appendChild(newContent); // Add the h1 element
+}
